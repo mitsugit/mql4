@@ -1,0 +1,28 @@
+
+グローバル変数に
+
+input color col = Gray;
+input int size = 20;
+input int x = 250;
+input int y = 20;
+string Text_Font = "Arial";
+
+
+
+オンティックに
+
+RefreshRates();
+ObjectCreate("Screen", OBJ_LABEL, 0, 0, 0);
+ObjectSet("Screen", OBJPROP_CORNER, 0);
+ObjectSet("Screen", OBJPROP_XDISTANCE, x);
+ObjectSet("Screen", OBJPROP_YDISTANCE, y);
+
+ObjectSetText("Screen", "text1", size, Text_Font, col);
+  
+  
+ObjectCreate("Screen2", OBJ_LABEL, 0, 0, 0);
+ObjectSet("Screen2", OBJPROP_CORNER, 0);
+ObjectSet("Screen2", OBJPROP_XDISTANCE, x);
+ObjectSet("Screen2", OBJPROP_YDISTANCE, y+60);
+
+ObjectSetText("Screen2", "text2", size, Text_Font, col);  
