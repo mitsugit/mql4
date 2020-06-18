@@ -1,0 +1,11 @@
+   
+   oninitまたはontickのところだけに記述
+   
+   
+   // テキストラベルオブジェクト生成
+    ObjectCreate( "obj_label", OBJ_LABEL,0,0,0);               // テキストラベルオブジェクト生成
+    ObjectSet(    "obj_label", OBJPROP_XDISTANCE,pixcel_x);    // テキストラベルオブジェクトX軸位置設定
+    ObjectSet(    "obj_label", OBJPROP_YDISTANCE,pixcel_y);    // テキストラベルオブジェクトY軸位置設定
+
+    // テキストラベルオブジェクト、テキストタイプ設定
+    ObjectSetText("obj_label", "ラベル表示" , 11 , "ＭＳ　ゴシック" , clrWhite); 
