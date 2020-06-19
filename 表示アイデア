@@ -1,0 +1,57 @@
+   
+RefreshRates();
+ObjectCreate("Screen", OBJ_LABEL, 0, 0, 0);
+ObjectSet("Screen", OBJPROP_CORNER, 0);
+ObjectSet("Screen", OBJPROP_XDISTANCE, x);
+ObjectSet("Screen", OBJPROP_YDISTANCE, y);
+
+RefreshRates();
+
+ObjectCreate("Screen2", OBJ_LABEL, 0, 0, 0);
+ObjectSet("Screen2", OBJPROP_CORNER, 0);
+ObjectSet("Screen2", OBJPROP_XDISTANCE, x);
+ObjectSet("Screen2", OBJPROP_YDISTANCE, y+40);
+
+ObjectSetText("Screen2", "" , size, Text_Font, col);
+
+if (OrdersTotal() != 0 && RISK != pre_RISK) 
+{
+
+ObjectSetText("Screen2", "risklevel will not change while you have a position" , size, Text_Font, col);
+
+}
+
+
+if (RISK == "36%"){
+if (OrdersTotal() != 0 && RISK != pre_RISK) 
+{
+
+ObjectSetText("Screen2", "risklevel will not change while you have a position" , size, Text_Font, col);
+
+}
+
+ObjectSetText("Screen", "current riklevel is 36%" , size, Text_Font, col);
+}
+
+if (RISK == "60%"){
+if (OrdersTotal() != 0 && RISK != pre_RISK) 
+{
+
+ObjectSetText("Screen2", "risklevel will not change while you have a position" , size, Text_Font, col);
+
+}
+
+ObjectSetText("Screen", "current riklevel is 60%test" , size, Text_Font, col);
+}
+
+if (RISK == "85%"){
+if (OrdersTotal() != 0 && RISK != pre_RISK) 
+{
+
+ObjectSetText("Screen2", "risklevel will not change while you have a position" , size, Text_Font, col);
+
+}
+
+ObjectSetText("Screen", "current riklevel is 85%" , size, Text_Font, col);
+}  
+  
